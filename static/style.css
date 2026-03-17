@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Main split layout */
+.main-container {
+    display: flex;
+    height: 100vh;
+}
+.title{
+    position: absolute;
+    top: 135px;
+    font-size: 35px;
+    color: #2c3e50;
+}
+/* LEFT IMAGE */
+.image-side {
+    width: 50%;
+    background: url('/static/bp.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/* RIGHT FORM */
+.form-side {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+}
+
+/* Form box */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Button */
+button {
+    padding: 10px;
+    width: 100%;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Link */
+.link {
+    color: blue;
+}
+
+/* Error */
+.error {
+    color: red;
+}
+/* DASHBOARD ONLY (does not affect login page) */
+
+.dashboard-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+}
+
+/* Dashboard input */
+.dashboard-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Lights */
+.dashboard-container .lights {
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard-container .light {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: gray;
+    margin: 5px;
+}
+
+/* Text spacing */
+#strength {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#entropy, #leak {
+    margin-top: 5px;
+}
+
+/* Card */
+.dashboard-container .card {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/* Logout button */
+.logout-btn {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background: #4ca1af;
+}
+/* REGISTER PAGE ONLY */
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form box */
+.register-form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.register-title {
+    position: absolute;
+    top: 80px;
+    font-size: 26px;
+    color: #2c3e50;
+}
+
+/* Inputs */
+.register-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Button */
+.register-form button {
+    width: 100%;
+    padding: 12px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.register-form button:hover {
+    background: #4ca1af;
+}
+
+/* Bottom text */
+.register-text {
+    margin-top: 15px;
+}

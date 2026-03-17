@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="/static/script.js"></script>
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <h2>🔐 Password Strength Checker</h2>
+    <input type="password" id="password" placeholder="Enter password" onkeyup="checkPassword()">
+    <span onclick="togglePassword()" id="eye">👁️</span>
+    <div class="lights">
+        <div id="light1" class="light"></div>
+        <div id="light2" class="light"></div>
+        <div id="light3" class="light"></div>
+    </div>
+
+    <p id="strength"></p>
+    <p id="entropy"></p>
+    <p id="leak"></p>
+
+    <!-- Suggestion Card -->
+    <div class="card">
+        <h3>💡 Suggested Strong Password</h3>
+        <p id="suggestion"></p>
+    </div>
+
+    <button onclick="window.location.href='/logout'" class="logout-btn">Logout</button>
+
+</div>
+
+</body>
+</html>
